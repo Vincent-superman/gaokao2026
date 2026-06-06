@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>2026 高考考前指南 · 6 月 7 日开考</title>
+<meta name="description" content="2026 年全国高考考前指南：倒计时、考试时间表、考场须知、应急锦囊、分省专区与最新资讯。中英双语。" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<header class="hero">
+  <nav class="topnav">
+    <div class="brand">
+      <span class="brand-mark">高</span>
+      <span data-i18n="brand">2026 高考考前指南</span>
+    </div>
+    <ul class="nav-links" id="nav-links"></ul>
+    <div class="lang-switch" role="group" aria-label="Language switch">
+      <button type="button" class="lang-btn" data-lang="zh">中文</button>
+      <button type="button" class="lang-btn" data-lang="en">English</button>
+    </div>
+  </nav>
+
+  <div class="hero-inner" id="countdown">
+    <p class="kicker" id="hero-kicker"></p>
+    <h1><span id="hero-title1"></span><br/><span id="hero-title2"></span></h1>
+    <p class="lede" id="hero-lede"></p>
+
+    <div class="countdown-card" aria-label="Countdown">
+      <div class="cd-block"><span class="num" id="cd-days">--</span><span class="label" id="lbl-days"></span></div>
+      <div class="cd-block"><span class="num" id="cd-hours">--</span><span class="label" id="lbl-hours"></span></div>
+      <div class="cd-block"><span class="num" id="cd-minutes">--</span><span class="label" id="lbl-minutes"></span></div>
+      <div class="cd-block"><span class="num" id="cd-seconds">--</span><span class="label" id="lbl-seconds"></span></div>
+    </div>
+    <p class="cd-target" id="cd-target"></p>
+
+    <div class="hero-stats" id="hero-stats"></div>
+  </div>
+</header>
+
+<main>
+
+<section id="schedule" class="section">
+  <div class="section-head">
+    <span class="badge" id="sec-schedule-badge"></span>
+    <h2 id="sec-schedule-title"></h2>
+    <p class="sub" id="sec-schedule-sub"></p>
+  </div>
+  <div class="schedule-grid" id="national-schedule"></div>
+</section>
+
+<section id="checklist" class="section soft">
+  <div class="section-head">
+    <span class="badge" id="sec-checklist-badge"></span>
+    <h2 id="sec-checklist-title"></h2>
+    <p class="sub" id="sec-checklist-sub"></p>
+  </div>
+  <div class="grid-3" id="checklist-grid"></div>
+</section>
+
+<section id="rules" class="section">
+  <div class="section-head">
+    <span class="badge" id="sec-rules-badge"></span>
+    <h2 id="sec-rules-title"></h2>
+  </div>
+  <div class="timeline" id="rules-timeline"></div>
+</section>
+
+<section id="emergency" class="section soft">
+  <div class="section-head">
+    <span class="badge accent" id="sec-emergency-badge"></span>
+    <h2 id="sec-emergency-title"></h2>
+  </div>
+  <div class="grid-2" id="emergency-grid"></div>
+</section>
+
+<section id="mind" class="section">
+  <div class="section-head">
+    <span class="badge" id="sec-mind-badge"></span>
+    <h2 id="sec-mind-title"></h2>
+  </div>
+  <div class="grid-2" id="mind-grid"></div>
+</section>
+
+<section id="provinces" class="section soft">
+  <div class="section-head">
+    <span class="badge accent" id="sec-provinces-badge"></span>
+    <h2 id="sec-provinces-title"></h2>
+    <p class="sub" id="sec-provinces-sub"></p>
+  </div>
+
+  <div class="province-picker">
+    <label for="province-select" id="province-picker-label"></label>
+    <select id="province-select"></select>
+  </div>
+
+  <div id="province-detail" class="province-detail" hidden></div>
+</section>
+
+<section id="news" class="section">
+  <div class="section-head">
+    <span class="badge" id="sec-news-badge"></span>
+    <h2 id="sec-news-title"></h2>
+    <p class="sub" id="sec-news-sub"></p>
+  </div>
+  <div class="news-list" id="news-list"></div>
+</section>
+
+<section class="cheer">
+  <h2 id="cheer-title"></h2>
+  <p id="cheer-body"></p>
+  <p class="signoff" id="cheer-signoff"></p>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p id="foot-disclaimer"></p>
+  <p class="dim" id="foot-meta"></p>
+</footer>
+
+<script src="data/provinces.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>
