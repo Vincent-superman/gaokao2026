@@ -333,14 +333,14 @@ body {
   line-height: 1.6;
 }
 .check-list li::before {
-  content: "鉁?";
+  content: "✓";
   position: absolute;
   left: 0;
   top: 6px;
   color: var(--c-primary);
   font-weight: 700;
 }
-.check-list.cross li::before { content: "鉁?"; color: var(--c-warn); }
+.check-list.cross li::before { content: "✕"; color: var(--c-warn); }
 
 /* ============== Timeline ============== */
 .timeline {
