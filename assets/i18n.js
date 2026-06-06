@@ -5,7 +5,7 @@ window.I18N = {
     nav: {
       countdown: "倒计时", schedule: "时间表", checklist: "必备清单",
       rules: "考场须知", emergency: "应急锦囊", mind: "心理调节",
-      provinces: "分省专区", news: "最新资讯"
+      weather: "考期天气", provinces: "分省专区", news: "最新资讯"
     },
     langSwitch: { zh: "中文", en: "English" },
     hero: {
@@ -75,6 +75,62 @@ window.I18N = {
       notesTitle: "本省特别提示",
       officialLink: "前往本省教育考试院 →"
     },
+    weather: {
+      badge: "考期天气",
+      title: "高考期间天气速查",
+      sub: "授权浏览器一键定位，自动获取你所在城市 6/7–6/10 每日预报与考试时段（上午/下午）的天气提示。所有数据通过 Open-Meteo 公开 API 获取，不会上传任何个人信息。",
+      btnLocate: "📍 使用我的位置",
+      btnLocating: "正在定位…",
+      btnRetry: "重试定位",
+      orLabel: "或手动搜索城市：",
+      searchPlaceholder: "输入城市名（如 北京 / Beijing / Shanghai）",
+      btnSearch: "搜索",
+      btnSearching: "搜索中…",
+      btnClear: "清除",
+      cityLabel: "当前城市",
+      coordLabel: "经纬度",
+      changeCity: "不是这里？换一个城市",
+      examDay: "高考",
+      morningSlot: "上午 09:00–11:30",
+      afternoonSlot: "下午 15:00–17:00",
+      tempHigh: "最高",
+      tempLow: "最低",
+      precip: "降水概率",
+      wind: "风力",
+      uv: "紫外线",
+      sunrise: "日出",
+      sunset: "日落",
+      tip: "贴心提示",
+      tipHotMorning: "上午高温 ≥ 32℃，建议提前 30 分钟到达，准备清凉油 / 风油精与备用 T 恤。",
+      tipHotAfternoon: "下午高温炎热，进入考场前别狂喝水，以免中途内急。",
+      tipRainHigh: "降水概率高，<b>务必带伞 + 一次性雨衣</b>。准考证用密封袋保护。",
+      tipRainMid: "可能有阵雨，包里放一把折叠伞最稳妥。",
+      tipColdMorning: "清晨较凉，外搭一件薄外套上阵，避免空调房着凉。",
+      tipUVHigh: "紫外线偏强，到考点路上戴帽子或防晒。",
+      tipWindStrong: "风力较大，请妥善保管准考证、答题卡，避免被风吹散。",
+      tipNormal: "天气适宜，按平日装束即可，集中精力发挥水平。",
+      errors: {
+        denied: "你已拒绝定位授权。可点击下方手动搜索城市。",
+        unavailable: "无法获取你的位置，请尝试手动搜索。",
+        timeout: "定位超时，请检查网络后重试。",
+        noGeo: "当前浏览器不支持地理定位。",
+        insecure: "浏览器要求页面通过 HTTPS 才能定位，请手动搜索城市。",
+        network: "天气数据请求失败，请检查网络连接。",
+        notFound: "未找到匹配的城市，请换一个关键字。"
+      },
+      weatherCodes: {
+        0: "晴", 1: "晴间多云", 2: "多云", 3: "阴",
+        45: "雾", 48: "冻雾",
+        51: "毛毛雨", 53: "中度毛毛雨", 55: "强毛毛雨",
+        56: "冻毛毛雨", 57: "强冻毛毛雨",
+        61: "小雨", 63: "中雨", 65: "大雨",
+        66: "冻雨", 67: "强冻雨",
+        71: "小雪", 73: "中雪", 75: "大雪", 77: "霰",
+        80: "阵雨", 81: "中阵雨", 82: "强阵雨",
+        85: "阵雪", 86: "强阵雪",
+        95: "雷阵雨", 96: "雷阵雨伴小冰雹", 99: "雷阵雨伴大冰雹"
+      }
+    },
     news: {
       badge: "官方动态", title: "2026 高考最新资讯",
       sub: "综合新华社、教育部及各省教育考试院公开报道整理。",
@@ -106,7 +162,7 @@ window.I18N = {
     nav: {
       countdown: "Countdown", schedule: "Schedule", checklist: "Checklist",
       rules: "Exam Rules", emergency: "Emergency", mind: "Mindset",
-      provinces: "By Province", news: "News"
+      weather: "Weather", provinces: "By Province", news: "News"
     },
     langSwitch: { zh: "中文", en: "English" },
     hero: {
@@ -176,6 +232,62 @@ window.I18N = {
       modeLabel: "Subject Mode: ",
       notesTitle: "Province-Specific Notes",
       officialLink: "Visit Provincial Exam Authority →"
+    },
+    weather: {
+      badge: "Exam-Day Weather",
+      title: "Weather During the Gaokao",
+      sub: "Allow the browser to share your location and instantly see daily forecasts for June 7–10 plus exam-time slot tips. Powered by Open-Meteo's free public API — no personal data is uploaded.",
+      btnLocate: "📍 Use my location",
+      btnLocating: "Locating…",
+      btnRetry: "Retry locating",
+      orLabel: "Or search a city manually:",
+      searchPlaceholder: "Type a city name (e.g. Beijing, Shanghai, Henan)",
+      btnSearch: "Search",
+      btnSearching: "Searching…",
+      btnClear: "Clear",
+      cityLabel: "Current city",
+      coordLabel: "Coordinates",
+      changeCity: "Wrong place? Pick another city",
+      examDay: "Exam",
+      morningSlot: "Morning 09:00–11:30",
+      afternoonSlot: "Afternoon 15:00–17:00",
+      tempHigh: "High",
+      tempLow: "Low",
+      precip: "Precip. chance",
+      wind: "Wind",
+      uv: "UV index",
+      sunrise: "Sunrise",
+      sunset: "Sunset",
+      tip: "Tips",
+      tipHotMorning: "Morning high ≥ 32°C — arrive 30 min early, bring cooling balm and a spare shirt.",
+      tipHotAfternoon: "Hot afternoon — don't chug water right before the exam to avoid restroom interruptions.",
+      tipRainHigh: "High chance of rain — <b>bring an umbrella plus a disposable raincoat</b>. Seal your admission ticket in a zip bag.",
+      tipRainMid: "Possible showers — a foldable umbrella in your bag is the safest bet.",
+      tipColdMorning: "Cool morning — wear a light jacket; the air-conditioned exam hall can get chilly.",
+      tipUVHigh: "Strong UV — wear a hat or apply sunscreen on the way to the venue.",
+      tipWindStrong: "Strong wind — secure your admission ticket and answer sheets carefully.",
+      tipNormal: "Comfortable weather — dress as usual and focus on the exam.",
+      errors: {
+        denied: "Location permission denied. Please use the manual search below.",
+        unavailable: "Unable to determine your location. Try the manual search.",
+        timeout: "Locating timed out. Check your connection and retry.",
+        noGeo: "Your browser does not support geolocation.",
+        insecure: "Browsers require HTTPS for geolocation. Please search a city manually.",
+        network: "Failed to fetch weather data. Check your network connection.",
+        notFound: "No matching city found. Try a different keyword."
+      },
+      weatherCodes: {
+        0: "Clear", 1: "Mainly clear", 2: "Partly cloudy", 3: "Overcast",
+        45: "Fog", 48: "Rime fog",
+        51: "Light drizzle", 53: "Moderate drizzle", 55: "Dense drizzle",
+        56: "Freezing drizzle", 57: "Heavy freezing drizzle",
+        61: "Light rain", 63: "Moderate rain", 65: "Heavy rain",
+        66: "Freezing rain", 67: "Heavy freezing rain",
+        71: "Light snow", 73: "Moderate snow", 75: "Heavy snow", 77: "Snow grains",
+        80: "Rain showers", 81: "Moderate showers", 82: "Violent showers",
+        85: "Snow showers", 86: "Heavy snow showers",
+        95: "Thunderstorm", 96: "Thunderstorm w/ small hail", 99: "Thunderstorm w/ heavy hail"
+      }
     },
     news: {
       badge: "Official Updates", title: "Latest 2026 Gaokao News",
